@@ -7,6 +7,7 @@
  */
  /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(fonts/LaperutaFLF.ttf);
 /* HTML element (SMACSS base) rules */
 @import "normalize.css";
 
@@ -22,11 +23,25 @@
 /* @import "theme-A.css"; */
 /* @import "theme-B.css"; */
 
+/*  */
+
+@font-face {
+  font-family: main-font;
+  src: url(fonts/LaperutaFLF.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
   background: #E1F2FE;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'main-font', sans-serif;
+}
+
+#img {
+  width: 100%;
+
+  left: 0;
+  right: 0;
 }
 
 .nav {
@@ -36,7 +51,20 @@ body {
   position: fixed;
   left: 0;
   right: 0;
+  font-family: 'main-font', sans-serif;
+}
 
+.header__logo-image {
+  height: 100px;
+  padding-left: 10px;
+}
+
+.header__name-and-slogan {
+  padding-top: 10px;
+}
+
+#name-and-slogan span {
+  color: #fff;
 }
 
 #main {
@@ -45,9 +73,11 @@ body {
 
 #main-menu {
   float:right;
-  padding-top: 20px;
-  font-size: 30px;
+  padding-top: 35px;
+  margin-right:
+  font-size: 34px;
   text-decoration: none;
+  font-family: 'main-font', sans-serif;
 }
 
 .nav ul {
@@ -71,7 +101,7 @@ body {
   transition: .3s background-color;
 }
 
-.nav a:hover {
+.menu-219:hover, .menu-431:hover, .menu-432:hover, .menu-433:hover, .menu-435:hover {
   background-color: #12355B;
   text-decoration: none;
 }
@@ -82,6 +112,36 @@ body {
   cursor: default;
   text-decoration: none;
 }
+
+#main-menu a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 0 16px 0 16px;
+
+}
+
+.btn-huge {
+    padding:12px 22px;
+    font-size:34px;
+    width: 50%;
+    height: 100px;
+    margin-top: 20px;
+    font-size: 50px;
+
+}
+
+.btn {
+  background-color: #102542;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#btn {
+  text-align: center;
+}
+
+
 
 @media screen and (min-width: 600px) {
   .nav li {
@@ -108,6 +168,9 @@ body {
     margin: 0 auto;
     float: right:
   }
+
+
+
 
 
 }
